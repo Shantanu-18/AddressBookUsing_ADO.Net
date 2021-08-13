@@ -15,5 +15,4 @@ namespace AddressBookUsing_ADO.Net
 		public string PhoneNumber {get;set;}
 		public string EmailId { get; set; }
 	}
-
 }
