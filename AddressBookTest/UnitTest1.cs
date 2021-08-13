@@ -23,6 +23,7 @@ namespace AddressBookTest
 
             var result = addressBook.AddContacts(model);
             Assert.IsTrue(result);
+
         }
     }
 }
