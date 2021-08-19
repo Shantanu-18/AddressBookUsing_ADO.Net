@@ -41,10 +41,11 @@ ZipCode=@ZipCode,
 PhoneNumber=@PhoneNumber,
 EmailId=@EmailId where FirstName=@FirstName
 
-if @Action = 'Delete' Delete from  AddressBook where FirstName=@FirstName
+if @Action = 'Delete' Delete from AddressBook where FirstName=@FirstName
+
+--if @Action = 'DisplayByCity' Select * from AddressBook where City=@City or State = @State
+
+--if @Action = 'SizeByCity' select COUNT(*) from AddressBook where City=@City or State = @State
 end
 
-select * from AddressBook
-
-update AddressBook set FirstName='Tony',State='Mexico',ZipCode='771122',PhoneNumber='6699332211' where SNR='4'
-update AddressBook set FirstName='Thomson',LastName='Blinder',Address='Disney land',City='London',State='London',ZipCode='558866',PhoneNumber='8899774455',EmailId='blinders@xyz.in' where SNR = '3'
+select * from AddressBook;
